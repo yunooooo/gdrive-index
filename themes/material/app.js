@@ -362,6 +362,7 @@ function file_image(path){
 	`;
 	$('#content').html(content);
 }
+document.write('<script src="//cdnjs.cloudflare.com/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>');
 
 function searchOnlyActiveDir() {
 	var e, t, n, l;
