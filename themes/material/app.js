@@ -293,16 +293,16 @@ function file_video(path){
 	<br>
 	<video class="mdui-video-fluid mdui-center" preload controls>
 	  <source src="${url}" type="video/mp4">
+	  <script>
+        	var video = document.currentScript.parentElement;
+        	video.volume = 0.25;
+      	  </script>
 	</video>
 	<br>${playBtn}
 	<!-Fixed label->
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label">download link</label>
 	  <input class="mdui-textfield-input" type="text" value="${url}"/>
-	</div>
-	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">HTML reference</label>
-	  <textarea class="mdui-textfield-input"><video><source src="${url}" type="video/mp4"></video></textarea>
 	</div>
 </div>
 <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
@@ -318,16 +318,16 @@ function file_audio(path){
 	<br>
 	<audio class="mdui-center" preload controls>
 	  <source src="${url}"">
+	  <script>
+        	var audio = document.currentScript.parentElement;
+        	audio.volume = 0.25;
+      	  </script>
 	</audio>
 	<br>
 	<!-Fixed label->
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label">Download link</label>
 	  <input class="mdui-textfield-input" type="text" value="${url}"/>
-	</div>
-	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">HTML reference</label>
-	  <textarea class="mdui-textfield-input"><audio><source src="${url}"></audio></textarea>
 	</div>
 </div>
 <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
@@ -348,15 +348,6 @@ function file_image(path){
 	  <label class="mdui-textfield-label">Download link</label>
 	  <input class="mdui-textfield-input" type="text" value="${url}"/>
 	</div>
-	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">HTML references</label>
-	  <input class="mdui-textfield-input" type="text" value="<img src='${url}' />"/>
-	</div>
-        <div class="mdui-textfield">
-	  <label class="mdui-textfield-label">Markdown Reference</label>
-	  <input class="mdui-textfield-input" type="text" value="![](${url})"/>
-	</div>
-        <br>
 </div>
 <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
 	`;
