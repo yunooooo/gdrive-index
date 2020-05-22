@@ -292,6 +292,13 @@ function file_video(path){
 <div class="mdui-container-fluid">
 	<br>
 	<video id="gdvid" class="mdui-video-fluid mdui-center" src="${url}" preload controls type="video/mp4">
+		<script>
+      			var video = document.getElementById("gdvid");
+      			video.addEventListener("canplay", function() {
+		    		var vid = document.getElementById("gdvid");
+		    		vid.volume = 0.35
+      			});
+    		</script>
 	</video>
 	<br>${playBtn}
 	<!-Fixed label->
@@ -304,7 +311,6 @@ function file_video(path){
 	`;
 	$('#content').html(content);
 }
-document.write('<script src="//yuju.pw/volume.js"></script>')
 
 // file display music |mp3|m4a|wav|ogg|
 function file_audio(path){
