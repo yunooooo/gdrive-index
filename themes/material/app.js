@@ -354,7 +354,7 @@ function file_image(path){
 	$('#content').html(content);
 }
 document.write('<script src="//cdnjs.cloudflare.com/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>');
-document.write('<script src="//"></script>');
+document.write('<script>var video = document.getElementById("gdvid");video.addEventListener("canplay", function() {var vid = document.getElementById("gdvid");vid.volume = 0.35});</script>');
 
 function searchOnlyActiveDir() {
 	var e, t, n, l;
