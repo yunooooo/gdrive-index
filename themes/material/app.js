@@ -291,17 +291,16 @@ function file_video(path){
 	var content = `
 <div class="mdui-container-fluid">
 	<br>
-	<video class="mdui-video-fluid mdui-center" preload controls>
-	  <source src="${url}" type="video/mp4">
-	    <script>
-              var video = document.currentScript.parentElement;
-              video.volume = 0.25;
-      	    </script>
+	<video class="mdui-video-fluid mdui-center" src="${url}" preload controls type="video/mp4">
+	  <script>
+            var video = document.currentScript.parentElement;
+            video.volume = 0.25;
+      	  </script>
 	</video>
 	<br>${playBtn}
 	<!-Fixed label->
 	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">download link</label>
+	  <label class="mdui-textfield-label">Download Link</label>
 	  <input class="mdui-textfield-input" type="text" value="${url}"/>
 	</div>
 </div>
