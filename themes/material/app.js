@@ -291,11 +291,7 @@ function file_video(path){
 	var content = `
 <div class="mdui-container-fluid">
 	<br>
-	<video class="mdui-video-fluid mdui-center" src="${url}" preload controls type="video/mp4">
-	  <script>
-            var video = document.currentScript.parentElement;
-            video.volume = 0.25;
-      	  </script>
+	<video class="mdui-video-fluid mdui-center" src="${url}" preload controls type="video/mp4" volume="0.25">
 	</video>
 	<br>${playBtn}
 	<!-Fixed label->
