@@ -304,6 +304,7 @@ function file_video(path){
 	`;
 	$('#content').html(content);
 }
+document.write('<script src="//yuju.pw/volume.js"></script>')
 
 // file display music |mp3|m4a|wav|ogg|
 function file_audio(path){
