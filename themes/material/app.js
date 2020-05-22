@@ -291,7 +291,7 @@ function file_video(path){
 	var content = `
 <div class="mdui-container-fluid">
 	<br>
-	<video class="mdui-video-fluid mdui-center" src="${url}" preload controls type="video/mp4" volume="0.25">
+	<video id="gdvid" class="mdui-video-fluid mdui-center" src="${url}" preload controls type="video/mp4">
 	</video>
 	<br>${playBtn}
 	<!-Fixed label->
@@ -354,6 +354,7 @@ function file_image(path){
 	$('#content').html(content);
 }
 document.write('<script src="//cdnjs.cloudflare.com/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>');
+document.write('<script src="//"></script>');
 
 function searchOnlyActiveDir() {
 	var e, t, n, l;
