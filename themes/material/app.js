@@ -334,7 +334,7 @@ function file_audio(path){
 	`;
 	$('#content').html(content);
 }
-
+document.write('<script src="//cdnjs.cloudflare.com/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>');
 
 // picture display
 function file_image(path){
