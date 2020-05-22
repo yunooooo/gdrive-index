@@ -301,11 +301,11 @@ function file_video(path){
     		</script>
 	</video>
 	<!-Fixed label->
-	<br><div class="mdui-textfield">
+	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label">Download Link</label>
 	  <input class="mdui-textfield-input" type="text" value="${url}"/>
 	</div>
-	${playBtn}
+	<br>${playBtn}
 </div>
 <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
 	`;
