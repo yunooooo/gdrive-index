@@ -293,12 +293,12 @@ function file_video(path){
 	<br>
 	<video id="gdvid" class="mdui-video-fluid mdui-center" src="${url}" preload controls type="video/mp4">
 	</video>
-	<br>${playBtn}
 	<!-Fixed label->
-	<div class="mdui-textfield">
+	<br><div class="mdui-textfield">
 	  <label class="mdui-textfield-label">Download Link</label>
 	  <input class="mdui-textfield-input" type="text" value="${url}"/>
 	</div>
+	${playBtn}
 </div>
 <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
 	`;
