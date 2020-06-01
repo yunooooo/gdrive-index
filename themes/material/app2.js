@@ -300,18 +300,17 @@ function file_video(path){
       		});
     	</script>
 	</video>
+	<br>${playBtn}
 	<!-Fixed label->
-	<br><div class="mdui-textfield">
+	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label">Download Link</label>
 	  <input class="mdui-textfield-input" type="text" value="${url}"/>
 	</div>
-	${playBtn}
 </div>
 <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
 	`;
 	$('#content').html(content);
 }
-document.write('<script src="//yuju.pw/volume.js"></script>')
 
 // file display music |mp3|m4a|wav|ogg|
 function file_audio(path){
